@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" height="300px" width="200px" style="border: 1px solid #000000;"></canvas>
+<script>
+    function Rectangle(x,y,color,height,width) {
+        this.height = height;
+        this.width = width;
+        this.x = x;
+        this.y = y;
+    }
+    function drawRectangle() {
+        let height = 100;
+        let width = 200;
+        let x = 10;
+        let y =10;
+        document.getElementById("myCanvas").height = height;
+        document.getElementById("myCanvas").width = width;
+        document.getElementById("myCanvas").x = x;
+        document.getElementById("myCanvas").y = y;
+    }
+    drawRectangle();
+</script>
+</body>
+</html>
