@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>removeFromArray</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr) {
+        let index = parseInt(prompt("input number"));
+        for (let i = 0;i < arr.length;i++){
+            if (index === i){
+                arr[index] = undefined;
+            }
+        }return arr;
+    }
+    let arr1 = [12,6,3,7,21,5,7];
+    let result = tryRemoveFromArray(arr1);
+    document.write(result);
+</script>
+</body>
+</html>
